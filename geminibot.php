@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['prompt'])) {
     $userPrompt = $_POST['prompt'];
 
     if (!$apiKey || !$role) {
-        echo "❌ Missing API key or role.";
+        echo " Missing API key or role.";
         exit;
     }
 
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['prompt'])) {
     curl_close($ch);
 
     $data = json_decode($response, true);
-    $reply = $data['candidates'][0]['content']['parts'][0]['text'] ?? '❌ Error getting reply.';
+    $reply = $data['candidates'][0]['content']['parts'][0]['text'] ?? ' Error getting reply.';
     echo $reply;
     exit;
 }
