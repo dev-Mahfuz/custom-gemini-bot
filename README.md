@@ -30,13 +30,12 @@ Link: will be available soon
 └── README.md          # This file
 
 ```
-usage:
-  steps:
-    - Clone or download this repository
-    - Upload `chat.php` to any PHP-supported hosting (e.g., 000webhost.com)
-    - Open the link in a browser
-    - Enter your Gemini API key and custom role
-    - Start chatting in real-time
+installation:
+- Clone or download this repository
+- Upload `chat.php` to any PHP-supported hosting (e.g., 000webhost.com)
+- Open the link in a browser
+- Enter your Gemini API key and custom role
+- Start chatting in real-time
 
 
 ## example_roles:
